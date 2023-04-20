@@ -148,7 +148,7 @@ FYI, I/O of sparse matrices wastes tons of time, by converting matrices into bin
 * Filename: spmv-cu-4090-detail.ipynb
 
 * Raw data: spmv-cusparse-1201-4090-70-dis.csv,
-                ncu-spmv-cusparse12-4090-detail.csv.
+                ncu-spmv-cusparse12-4090-detail.csv (compressed).
 
 
 
@@ -182,7 +182,7 @@ FYI, I/O of sparse matrices wastes tons of time, by converting matrices into bin
 
 * Filename: sptrsv-cu-4090-scatter.ipynb
 
-* Raw data: spsv-cusparse12-4090.csv,
+* Raw data: spsv-cusparse12-4090.csv (compressed),
                 level-info.csv,
                 ncu-sptrsv-cusparse-4090.csv.
 
