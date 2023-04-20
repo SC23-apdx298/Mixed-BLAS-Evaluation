@@ -1,0 +1,19 @@
+# check for HIP directory and give user hint how to set it
+ifeq ($(HIPDIR),)
+    hip := $(shell which hipcc | perl -pe 's|/bin/hipcc||')
+    ifeq ($(hip),)
+        hip := /opt/rocm/hip
+    endif
+    $(error Set $$HIPDIR, preferably in your environment, e.g., run "export HIPDIR=$(hip)" in ~/.bashrc, or "setenv HIPDIR $(hip)" in ~/.cshrc)
+endif
+
+ifeq ($(wildcard $(HIPDIR)),)
+$(error $$HIPDIR=$(HIPDIR) does not exist. Please set $$HIPDIR to where HIP is installed. (normally in /opt/rocm/hip))
+endif
+
+# don't compile HIP platfo
+ifeq ($(shell hipconfig 2>&1 | grep '^HIP_PLATFORM' | rev | cut -d' ' -f1 | rev),nvcc)
+$(warning Specified 'BACKEND=hip', but the HIP platform gave 'nvcc', which means you're using HIP on NVIDIA (this is not recommended; try setting 'BACKEND' to 'cuda'))
+endif
+
+

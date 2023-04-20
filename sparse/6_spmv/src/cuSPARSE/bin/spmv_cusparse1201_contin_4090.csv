@@ -1,0 +1,7 @@
+exe_spmv_cusparse_16BF_32_32,/ssget/MM/Szczerba/Ill_Stokes/Ill_Stokes.cbd,8,8,8,20896,20896,191368,0.01125,34.021,52689
+exe_spmv_cusparse_16BF_32_32,/ssget/MM/Freescale/FullChip/FullChip.cbd,8,8,8,2987012,2987012,26621990,0.4883,109.039,75856
+exe_spmv_cusparse_16BF_32_32,/ssget/MM/Freescale/Freescale1/Freescale1.cbd,8,8,8,3428755,3428755,18920347,0.29525,128.165,87160
+exe_spmv_cusparse_16BF_32_32,/ssget/MM/Freescale/circuit5M_dc/circuit5M_dc.cbd,8,8,8,3523317,3523317,19194193,0.3068,125.125,86669
+exe_spmv_cusparse_16BF_32_32,/ssget/MM/Freescale/transient/transient.cbd,8,8,8,178866,178866,961790,0.02075,92.7027,89028
+exe_spmv_cusparse_16BF_32_32,/ssget/MM/Freescale/Freescale2/Freescale2.cbd,8,8,8,2999349,2999349,23042677,0.3279,140.547,87367.5
+exe_spmv_cusparse_16BF_32_32,/ssget/MM/Freescale/memchip/memchip.cbd,
